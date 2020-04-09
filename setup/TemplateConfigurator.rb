@@ -157,7 +157,7 @@ module Pod
 
     def set_test_framework(test_type, extension, folder)
       content_path = "setup/test_examples/" + test_type + "." + extension
-      tests_path = "templates/" + folder + "/Example/Tests/Tests." + extension
+      tests_path = "templates/" + folder + "/Tests/Tests." + extension
       tests = File.read tests_path
       tests.gsub!("${TEST_EXAMPLE}", File.read(content_path) )
       File.open(tests_path, "w") { |file| file.puts tests }
