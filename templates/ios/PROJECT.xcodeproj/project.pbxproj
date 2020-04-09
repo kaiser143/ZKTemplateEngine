@@ -82,6 +82,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B548B84243F922600D16D1A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		4B548B85243F923000D16D1A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				4B548B88243F928B00D16D1A /* PROJECT */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4B548B86243F924B00D16D1A /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		4B548B87243F925E00D16D1A /* Vendors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Vendors;
+			sourceTree = "<group>";
+		};
+		4B548B88243F928B00D16D1A /* PROJECT */ = {
+			isa = PBXGroup;
+			children = (
+				4B548B8C243F92AE00D16D1A /* Model */,
+				4B548B8B243F92A600D16D1A /* View */,
+				4B548B8A243F929D00D16D1A /* Controller */,
+				4B548B89243F929300D16D1A /* ViewModel */,
+			);
+			name = PROJECT;
+			sourceTree = "<group>";
+		};
+		4B548B89243F929300D16D1A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		4B548B8A243F929D00D16D1A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4B548B8B243F92A600D16D1A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4B548B8C243F92AE00D16D1A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +183,10 @@
 		6003F593195388D20070C39A /* PROJECT */ = {
 			isa = PBXGroup;
 			children = (
+				4B548B87243F925E00D16D1A /* Vendors */,
+				4B548B86243F924B00D16D1A /* General */,
+				4B548B85243F923000D16D1A /* Classes */,
+				4B548B84243F922600D16D1A /* Networking */,
 				6003F59C195388D20070C39A /* CPDAppDelegate.h */,
 				6003F59D195388D20070C39A /* CPDAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,

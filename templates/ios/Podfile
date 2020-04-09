@@ -6,6 +6,11 @@ target '${POD_NAME}' do
   	use_frameworks!
 
   	# Pods for ${POD_NAME}
+  	pod 'ReactiveObjC'
+  	pod 'Masonry'
+  	pod 'UITableView+FDTemplateLayoutCell'
+  	pod 'YYModel'
+  	pod 'ZKCategories'
   	
   	target '${POD_NAME}_Tests' do
     	inherit! :search_paths
