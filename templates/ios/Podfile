@@ -1,11 +1,15 @@
-use_frameworks!
-
-platform :ios, '8.0'
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
 
 target '${POD_NAME}_Example' do
-  target '${POD_NAME}_Tests' do
-    inherit! :search_paths
+	# Comment the next line if you don't want to use dynamic frameworks
+  	use_frameworks!
 
-    ${INCLUDED_PODS}
-  end
+  	# Pods for ${POD_NAME}
+  	
+  	target '${POD_NAME}_Tests' do
+    	inherit! :search_paths
+
+    	${INCLUDED_PODS}
+  	end
 end
