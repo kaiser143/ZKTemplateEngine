@@ -103,7 +103,7 @@ module Pod
       puts "\nRunning " + "pod install".magenta + " on your new library."
       puts ""
 
-      system "pod install"
+      system "pod install --no-repo-update"
 
       `git add #{pod_name}.xcodeproj/project.pbxproj`
       `git commit -m "Initial commit"`
