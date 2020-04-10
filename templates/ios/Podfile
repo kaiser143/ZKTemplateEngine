@@ -14,7 +14,8 @@ target '${POD_NAME}' do
   	
   	target '${POD_NAME}_Tests' do
     	inherit! :search_paths
-
+      # Pods for testing
+      
     	${INCLUDED_PODS}
   	end
 end

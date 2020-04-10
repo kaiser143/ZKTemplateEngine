@@ -100,6 +100,7 @@
 		4B548B86243F924B00D16D1A /* General */ = {
 			isa = PBXGroup;
 			children = (
+				4BCA4E1F24400E6E0061B0C5 /* Categories */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -148,6 +149,13 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		4BCA4E1F24400E6E0061B0C5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
