@@ -13,7 +13,7 @@ module Pod
 
     def perform
 
-      # keep_demo = 'yes'.to_sym
+      keep_demo = 'yes'.to_sym
       # framework = 'none'.to_sym
       # case framework
       #   when :specta

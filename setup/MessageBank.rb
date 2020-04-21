@@ -55,7 +55,7 @@ module Pod
         `defaults write org.cocoapods.pod-template HasRunBefore -bool true`
       end
 
-      puts ""
+      # puts ""
     end
 
     def farewell_message
