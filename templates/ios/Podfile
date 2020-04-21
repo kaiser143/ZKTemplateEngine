@@ -1,21 +1,32 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
+inhibit_all_warnings!
 
-target '${POD_NAME}' do
-	# Comment the next line if you don't want to use dynamic frameworks
-  	use_frameworks!
+target '${POD_NAME}_Example' do
+	# Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+	use_frameworks!
 
-  	# Pods for ${POD_NAME}
+	# Pods for ${POD_NAME}
+	pod 'Stinger'
   	pod 'ReactiveObjC'
-  	pod 'Masonry'
-  	pod 'UITableView+FDTemplateLayoutCell'
   	pod 'YYModel'
-  	pod 'ZKCategories'
-  	
-  	target '${POD_NAME}_Tests' do
+  	pod 'Masonry'
+  	pod 'SDWebImage'
+
+    
+    pod 'UITableView+FDTemplateLayoutCell', :git => 'https://github.com/forkingdog/UITableView-FDTemplateLayoutCell.git', :tag => '1.6'
+    pod 'CTNetworking', :git => 'https://github.com/casatwy/CTNetworking.git', :tag => '14'
+    pod 'ZKCategories', :git => 'https://github.com/kaiser143/ZKCategories.git', :commit => '6e9fac0af1ff8d86b677391165bc7fafa5df2308'
+    pod 'ZKFoundation', :git => 'https://github.com/kaiser143/ZKFoundation.git', :commit => '98259018300dce8c480757c922a9d1c677e0e97b'
+
+  	target '${POD_NAME}Tests' do
     	inherit! :search_paths
-      # Pods for testing
-      
+    	# Pods for testing
     	${INCLUDED_PODS}
+  	end
+
+  	target '${POD_NAME}UITests' do
+  		inherit! :search_paths
+  		# Pods for testing
   	end
 end

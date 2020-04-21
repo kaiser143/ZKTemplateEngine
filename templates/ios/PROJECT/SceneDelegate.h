@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  SceneDelegate.h
 //  PROJECT
 //
 //  Created by PROJECT_OWNER on TODAYS_DATE.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CPDAppDelegate : UIResponder <UIApplicationDelegate>
+@interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 
+@property (strong, nonatomic) UIWindow * window;
 
 @end
 
