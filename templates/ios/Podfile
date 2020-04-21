@@ -30,3 +30,7 @@ target '${POD_NAME}' do
   		# Pods for testing
   	end
 end
+
+post_install do |installer|
+    installer.pods_project.root_object.attributes["ORGANIZATIONNAME"] = "Enterprise Name"
+end
