@@ -13,43 +13,43 @@ module Pod
 
     def perform
 
-      keep_demo = 'yes'.to_sym
-      framework = 'none'.to_sym
-      case framework
-        when :specta
-          configurator.add_pod_to_podfile "Specta"
-          configurator.add_pod_to_podfile "Expecta"
+      # keep_demo = 'yes'.to_sym
+      # framework = 'none'.to_sym
+      # case framework
+      #   when :specta
+      #     configurator.add_pod_to_podfile "Specta"
+      #     configurator.add_pod_to_podfile "Expecta"
 
-          configurator.add_line_to_pch "@import Specta;"
-          configurator.add_line_to_pch "@import Expecta;"
+      #     configurator.add_line_to_pch "@import Specta;"
+      #     configurator.add_line_to_pch "@import Expecta;"
 
-          configurator.set_test_framework("specta", "m", "ios")
+      #     configurator.set_test_framework("specta", "m", "ios")
 
-        when :kiwi
-          configurator.add_pod_to_podfile "Kiwi"
-          configurator.add_line_to_pch "@import Kiwi;"
-          configurator.set_test_framework("kiwi", "m", "ios")
+      #   when :kiwi
+      #     configurator.add_pod_to_podfile "Kiwi"
+      #     configurator.add_line_to_pch "@import Kiwi;"
+      #     configurator.set_test_framework("kiwi", "m", "ios")
 
-        when :none
-          configurator.set_test_framework("xctest", "m", "ios")
-      end
+      #   when :none
+      #     configurator.set_test_framework("xctest", "m", "ios")
+      # end
 
-      snapshots = 'yes'.to_sym
-      case snapshots
-        when :yes
-          configurator.add_pod_to_podfile "FBSnapshotTestCase"
-          configurator.add_line_to_pch "@import FBSnapshotTestCase;"
+      # snapshots = 'yes'.to_sym
+      # case snapshots
+      #   when :yes
+      #     configurator.add_pod_to_podfile "FBSnapshotTestCase"
+      #     configurator.add_line_to_pch "@import FBSnapshotTestCase;"
 
-          if keep_demo == :no
-              puts " Putting demo application back in, you cannot do view tests without a host application."
-              keep_demo = :yes
-          end
+      #     if keep_demo == :no
+      #         puts " Putting demo application back in, you cannot do view tests without a host application."
+      #         keep_demo = :yes
+      #     end
 
-          if framework == :specta
-              configurator.add_pod_to_podfile "Expecta+Snapshots"
-              configurator.add_line_to_pch "@import Expecta_Snapshots;"
-          end
-      end
+      #     if framework == :specta
+      #         configurator.add_pod_to_podfile "Expecta+Snapshots"
+      #         configurator.add_line_to_pch "@import Expecta_Snapshots;"
+      #     end
+      # end
 
       prefix = nil
 
