@@ -82,6 +82,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B55F271244F32FF00139A87 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4B55F272244F330B00139A87 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4B55F273244F332100139A87 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		4BDB1D6F244EE47F008F0EB6 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +126,7 @@
 		4BDB1D7A244EE47F008F0EB6 /* PROJECT */ = {
 			isa = PBXGroup;
 			children = (
+				4B55F273244F332100139A87 /* Helpers */,
 				4BDB1DB3244EE4C6008F0EB6 /* Classes */,
 				4BDB1DB1244EE4C6008F0EB6 /* General */,
 				4BDB1DB0244EE4C5008F0EB6 /* Networking */,
@@ -153,6 +175,8 @@
 		4BDB1DB1244EE4C6008F0EB6 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				4B55F272244F330B00139A87 /* Classes */,
+				4B55F271244F32FF00139A87 /* Views */,
 				4BDB1DB2244EE4C6008F0EB6 /* Categories */,
 			);
 			path = General;

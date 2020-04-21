@@ -8,27 +8,27 @@ target '${POD_NAME}' do
 
 	# Pods for ${POD_NAME}
 	pod 'Stinger'
-  	pod 'ReactiveObjC'
-  	pod 'YYModel'
-  	pod 'Masonry'
-  	pod 'SDWebImage'
+	pod 'ReactiveObjC'
+	pod 'YYModel'
+	pod 'Masonry'
+	pod 'SDWebImage'
 
-    
-    pod 'UITableView+FDTemplateLayoutCell', :git => 'https://github.com/forkingdog/UITableView-FDTemplateLayoutCell.git', :tag => '1.6'
-    pod 'CTNetworking', :git => 'https://github.com/casatwy/CTNetworking.git', :tag => '14'
-    pod 'ZKCategories', :git => 'https://github.com/kaiser143/ZKCategories.git', :commit => '6e9fac0af1ff8d86b677391165bc7fafa5df2308'
-    pod 'ZKFoundation', :git => 'https://github.com/kaiser143/ZKFoundation.git', :commit => '98259018300dce8c480757c922a9d1c677e0e97b'
+  
+  pod 'UITableView+FDTemplateLayoutCell', :git => 'https://github.com/forkingdog/UITableView-FDTemplateLayoutCell.git', :tag => '1.6'
+  pod 'CTNetworking', :git => 'https://github.com/casatwy/CTNetworking.git', :tag => '14'
+  pod 'ZKCategories', :git => 'https://github.com/kaiser143/ZKCategories.git', :commit => '9c9ddb177d68dc7f2e062f8781107982e205cc4f'
+  pod 'ZKFoundation', :git => 'https://github.com/kaiser143/ZKFoundation.git', :commit => '091cd3c0ffab27e209b075eb26564203b9919fed'
 
-  	target '${POD_NAME}Tests' do
-    	inherit! :search_paths
-    	# Pods for testing
-    	${INCLUDED_PODS}
-  	end
+	target '${POD_NAME}Tests' do
+  	inherit! :search_paths
+  	# Pods for testing
+  	${INCLUDED_PODS}
+	end
 
-  	target '${POD_NAME}UITests' do
-  		inherit! :search_paths
-  		# Pods for testing
-  	end
+	target '${POD_NAME}UITests' do
+		inherit! :search_paths
+		# Pods for testing
+	end
 end
 
 post_install do |installer|
