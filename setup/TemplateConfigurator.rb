@@ -166,8 +166,8 @@ module Pod
     def rename_template_files
       FileUtils.mv "POD_README.md", "README.md"
       FileUtils.mv "POD_LICENSE", "LICENSE"
-      FileUtils.mv "PROJECTTests", "${PROJECT}Tests"
-      FileUtils.mv "PROJECTUITests", "${PROJECT}UITests"
+      FileUtils.mv "PROJECTTests", "${pod_name}Tests"
+      FileUtils.mv "PROJECTUITests", "${pod_name}UITests"
     end
 
     def rename_classes_folder
