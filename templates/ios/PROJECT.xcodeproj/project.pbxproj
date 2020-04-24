@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B77AD162452972400365485 /* RVMViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B77AD142452972400365485 /* RVMViewModel.m */; };
 		4BDB1D7D244EE47F008F0EB6 /* CPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB1D7C244EE47F008F0EB6 /* CPDAppDelegate.m */; };
 		4BDB1D80244EE47F008F0EB6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB1D7F244EE47F008F0EB6 /* SceneDelegate.m */; };
 		4BDB1D83244EE47F008F0EB6 /* CPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDB1D82244EE47F008F0EB6 /* CPDViewController.m */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B77AD142452972400365485 /* RVMViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVMViewModel.m; sourceTree = "<group>"; };
+		4B77AD152452972400365485 /* RVMViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVMViewModel.h; sourceTree = "<group>"; };
 		4BDB1D78244EE47F008F0EB6 /* PROJECT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PROJECT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BDB1D7B244EE47F008F0EB6 /* CPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPDAppDelegate.h; sourceTree = "<group>"; };
 		4BDB1D7C244EE47F008F0EB6 /* CPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPDAppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +104,29 @@
 			children = (
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4B77AD11245296D100365485 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interceptors;
+			sourceTree = "<group>";
+		};
+		4B77AD12245296E300365485 /* AppDelegateService */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AppDelegateService;
+			sourceTree = "<group>";
+		};
+		4B77AD13245296FF00365485 /* ReactiveViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4B77AD152452972400365485 /* RVMViewModel.h */,
+				4B77AD142452972400365485 /* RVMViewModel.m */,
+			);
+			path = ReactiveViewModel;
 			sourceTree = "<group>";
 		};
 		4BDB1D6F244EE47F008F0EB6 = {
@@ -175,6 +201,8 @@
 		4BDB1DB1244EE4C6008F0EB6 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				4B77AD12245296E300365485 /* AppDelegateService */,
+				4B77AD11245296D100365485 /* Interceptors */,
 				4B55F272244F330B00139A87 /* Classes */,
 				4B55F271244F32FF00139A87 /* Views */,
 				4BDB1DB2244EE4C6008F0EB6 /* Categories */,
@@ -239,6 +267,7 @@
 		4BDB1DB9244EE4C6008F0EB6 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				4B77AD13245296FF00365485 /* ReactiveViewModel */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -376,6 +405,7 @@
 			files = (
 				4BDB1D83244EE47F008F0EB6 /* CPDViewController.m in Sources */,
 				4BDB1D7D244EE47F008F0EB6 /* CPDAppDelegate.m in Sources */,
+				4B77AD162452972400365485 /* RVMViewModel.m in Sources */,
 				4BDB1D8E244EE480008F0EB6 /* main.m in Sources */,
 				4BDB1D80244EE47F008F0EB6 /* SceneDelegate.m in Sources */,
 			);
