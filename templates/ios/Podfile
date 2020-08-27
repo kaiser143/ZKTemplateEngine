@@ -14,10 +14,10 @@ target '${POD_NAME}' do
 	pod 'SDWebImage'
 
   
-  pod 'UITableView+FDTemplateLayoutCell', :git => 'https://github.com/forkingdog/UITableView-FDTemplateLayoutCell.git', :tag => '1.6'
-  pod 'CTNetworking', :git => 'https://github.com/casatwy/CTNetworking.git', :tag => '15'
-  pod 'ZKCategories', :git => 'https://github.com/kaiser143/ZKCategories.git', :commit => '44eb9dc904ab89277a9bb2487c87c608cf20e04f'
-  pod 'ZKFoundation', :git => 'https://github.com/kaiser143/ZKFoundation.git', :commit => '0d289ad174aa4eeb2d55a294a8da1c561a8c74e9'
+  	pod 'UITableView+FDTemplateLayoutCell', :git => 'https://github.com/forkingdog/UITableView-FDTemplateLayoutCell.git', :tag => '1.6'
+  	pod 'CTNetworking', :git => 'https://github.com/casatwy/CTNetworking.git', :tag => '15'
+  	pod 'ZKCategories', :git => 'https://github.com/kaiser143/ZKCategories.git', :commit => '44eb9dc904ab89277a9bb2487c87c608cf20e04f'
+  	pod 'ZKFoundation', :git => 'https://github.com/kaiser143/ZKFoundation.git', :commit => '0d289ad174aa4eeb2d55a294a8da1c561a8c74e9'
 
 	target '${POD_NAME}Tests' do
   	inherit! :search_paths
