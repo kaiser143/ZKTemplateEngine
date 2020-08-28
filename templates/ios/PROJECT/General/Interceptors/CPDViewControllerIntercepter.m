@@ -56,7 +56,7 @@
     static dispatch_once_t onceToken;
     static NSArray *controllers;
     dispatch_once(&onceToken, ^{
-        controllers = @[@"LJJUpdateViewController", @"UIViewController", @"MKASRootViewController"];
+        controllers = @[@"UIViewController"];
     });
     
     if (![controllers containsObject:viewController.className]) {
