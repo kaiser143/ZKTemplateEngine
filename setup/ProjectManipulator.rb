@@ -96,7 +96,7 @@ RUBY
           File.rename before, after
         end
 
-        ["GPDViewControllerIntercepter.h", "GPDViewControllerIntercepter.m"].each do |file|
+        ["CPDViewControllerIntercepter.h", "CPDViewControllerIntercepter.m"].each do |file|
           before = project_folder + "/PROJECT/General/Interceptors/" + file
           next unless File.exists? before
 
