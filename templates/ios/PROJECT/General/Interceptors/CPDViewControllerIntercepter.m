@@ -23,7 +23,7 @@
 
 + (instancetype)manager {
     static dispatch_once_t onceToken;
-    static GPDViewControllerIntercepter *instance = nil;
+    static CPDViewControllerIntercepter *instance = nil;
     dispatch_once(&onceToken, ^{
         instance = [[self alloc] init];
     });
