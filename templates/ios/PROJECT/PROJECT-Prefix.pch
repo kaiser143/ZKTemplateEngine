@@ -12,4 +12,13 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#ifndef __OPTIMIZE__
+# define NSLog(...) NSLog(__VA_ARGS__)
+# define CNLog(aParam, ...) NSLog(@"%s(%d): " aParam, ((strrchr(__FILE__, '/') ? : __FILE__- 1) + 1), __LINE__, ##__VA_ARGS__)
+#else
+# define NSLog(...) {}
+# define CNLog(aParam, ...) {}
+#endif
+
+
 #endif /* PROJECT_Prefix_pch */
