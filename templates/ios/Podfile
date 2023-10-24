@@ -17,8 +17,8 @@ target '${POD_NAME}' do
   pod 'UITableView+FDTemplateLayoutCell', :git => 'https://github.com/forkingdog/UITableView-FDTemplateLayoutCell.git', :tag => '1.6'
   pod 'ZKAppDelegateSOA', :git => 'https://github.com/kaiser143/ZKAppDelegateSOA.git', :commit => '91a125e13bc9b6869cd42af4396941d3273b6d2e'
   pod 'CTNetworking', :git => 'https://github.com/casatwy/CTNetworking.git', :tag => '15'
-  pod 'ZKCategories', :git => 'https://github.com/kaiser143/ZKCategories.git', :tag => '0.3.13'
-  pod 'ZKFoundation', :git => 'https://github.com/kaiser143/ZKFoundation.git', :tag => '0.1.8'
+  pod 'ZKCategories', :git => 'https://github.com/kaiser143/ZKCategories.git', :tag => '0.3.19'
+  pod 'ZKFoundation', :git => 'https://github.com/kaiser143/ZKFoundation.git', :tag => '0.1.13'
 
 	target '${POD_NAME}Tests' do
   	inherit! :search_paths
